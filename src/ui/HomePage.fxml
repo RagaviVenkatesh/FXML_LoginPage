@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlController.HomePageController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="450.0" prefWidth="700.0">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="457.0" style="-fx-background-color: cyan;">
+               <children>
+                  <Label layoutX="67.0" layoutY="279.0" text="BUG TRACKING SYSTEM" textFill="#da0c8f">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="457.0" prefHeight="600.0" prefWidth="644.0" style="-fx-background-color: hotpink;">
+               <children>
+                  <Label layoutX="266.0" layoutY="134.0" text="SIGN IN">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="179.0" layoutY="201.0" prefHeight="70.0" prefWidth="287.0" promptText="username" style="-fx-border-color: blue;" />
+                  <PasswordField fx:id="password" layoutX="179.0" layoutY="290.0" prefHeight="70.0" prefWidth="287.0" promptText="password" style="-fx-border-color: blue;" />
+                  <Button fx:id="login" layoutX="272.0" layoutY="394.0" mnemonicParsing="false" onAction="#login" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: cyan; -fx-border-radius: 100;" text="Login">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
